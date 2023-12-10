@@ -175,3 +175,44 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// download button
+const fileSrc = 'assets/images/avatar-1.png';
+document.addEventListener("DOMContentLoaded", function(){
+  this.querySelector(".icon").addEventListener("click", function(){
+    let waitClass = "waiting",
+        runClass = "running",
+        cl = this.classList;
+
+    if (!cl.contains(waitClass) && !cl.contains(runClass)) {
+      cl.add(waitClass);
+      setTimeout(function(){
+        cl.remove(waitClass);
+        setTimeout(function(){
+          cl.add(runClass);
+          
+          // Add the file source location here
+          const fileSrc = 'assets/images/works/Lokesh-resume-VE.pdf';
+          
+          // Create an anchor element for downloading
+          const downloadLink = document.createElement('a');
+          downloadLink.href = fileSrc;
+          downloadLink.setAttribute('download', ''); // This attribute triggers the download
+          
+          // Append the anchor element to the body (for it to work in some browsers)
+          document.body.appendChild(downloadLink);
+          
+          // Programmatically trigger the click event
+          downloadLink.click();
+          
+          // Remove the anchor element from the body
+          document.body.removeChild(downloadLink);
+          
+          setTimeout(function(){
+            cl.remove(runClass);
+          }, 4000);
+        }, 200);
+      }, 1800);
+    }
+  });
+});
