@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Lokesh</title>
+    <link rel="stylesheet" href="success.css">
+</head>
+<body>
+        <div id="scene-container"> </div>
+        <div>
+        <a class="credits fade-in" href="index.html" target="blank"> <u><b>Page Not Found</b></u> <br>
+            <br>Looks like you've followed a broken link or entered a URL that doesn't exist on my site.<br>✌️<br> ➤ Back to the site</a>
+        </div>
+        
+        <script type="importmap">
+        {
+            "imports": {
+            "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+            }
+        }
+        </script>
+        
+        <!-- UTILS FUNCTIONS -->
+        
+        <script>
+        
+        function getRandomFromArr(arr) {
+        
+        const randomElement = arr[Math.floor(Math.random() * arr.length)];
+        return randomElement;
+        
+        }
+        
+        function getRandomBetween(min, max) {
+        
+        return Math.random() * (max - min) + min;
+        
+        }
+        
+        function getRandomIntBetween(min, max) {
+        
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+        
+        }
+        
+        </script>
+</body>
+<script type="module" src="success.js"></script>
+</html>

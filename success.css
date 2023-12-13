@@ -1,0 +1,233 @@
+/* CSS for responsiveness */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #0a0a0a;
+    font-family: Arial;
+    font-size: 4vw; /* Adjust font size based on viewport width */
+}
+
+#scene-container {
+    position: relative; /* Change position to relative */
+    width: 100vw; /* Use viewport width units for width */
+    height: 100vh; /* Use viewport height units for height */
+    max-width: auto; /* Ensure the container doesn't exceed the viewport width */
+    max-height: auto; /* Ensure the container doesn't exceed the viewport height */
+    background: #0a0a0a;
+}
+
+
+.credits {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    color: #dddacc;
+	background: rgba(0, 0, 0, 0.5);
+    padding: 2vw;
+    font-size: 2vw; /* Adjust font size based on viewport width */
+    border: 0.2vw solid #dddacc;
+    transition: background 200ms ease-in;
+    border-radius: 1vw;
+    opacity: 0.0;
+    max-width: 90%; /* Set maximum width for responsiveness */
+}
+
+.credits:hover {
+    background: rgba(0, 0, 0, 0.75);
+    color: #c296ff;
+    border: 0.5vw solid #c296ff;
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-out 0.5s forwards; /* Adjust animation duration and delay */
+    -moz-animation: fadeIn 2s ease-out 0.5s forwards;
+    -webkit-animation: fadeIn 2s ease-out 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        color: rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        color: rgba(0, 0, 0, 0.85);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        color: rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        color: rgba(0, 0, 0, 0.85);
+    }
+}
+
+
+/* Styles for .credits on 4K displays */
+@media screen and (min-width: 3840px) and (min-height: 2160px) {
+    .credits {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		text-transform: none;
+		text-decoration: none;
+		color: #dddacc;
+		background: rgba(0, 0, 0, 0.5);
+		padding: 2vw;
+		font-size: 2vw; /* Adjust font size based on viewport width */
+		border: 0.2vw solid #dddacc;
+		transition: background 200ms ease-in;
+		border-radius: 1vw;
+		opacity: 0.0;
+		max-width: 90%; /* Set maximum width for responsiveness */
+    }
+}
+
+/* Styles for .credits on 1440px displays */
+@media screen and (min-width: 1440px) {
+    .credits {
+        position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		text-transform: none;
+		text-decoration: none;
+		color: #dddacc;
+		background: rgba(0, 0, 0, 0.5);
+		padding: 2vw;
+		font-size: 2vw; /* Adjust font size based on viewport width */
+		border: 0.2vw solid #dddacc;
+		transition: background 200ms ease-in;
+		border-radius: 1vw;
+		opacity: 0.0;
+		max-width: 90%; /* Set maximum width for responsiveness */
+    }
+}
+
+/* Styles for .credits on 1024px displays */
+@media screen and (min-width: 1024px) {
+    .credits {
+        position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		text-transform: none;
+		text-decoration: none;
+		color: #dddacc;
+		background: rgba(0, 0, 0, 0.5);
+		padding: 2vw;
+		font-size: 2vw; /* Adjust font size based on viewport width */
+		border: 0.2vw solid #dddacc;
+		transition: background 200ms ease-in;
+		border-radius: 1vw;
+		opacity: 0.0;
+		max-width: 90%; /* Set maximum width for responsiveness */
+    }
+}
+
+/* Styles for .credits on 768px displays */
+@media screen and (min-width: 768px) {
+    .credits {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		text-transform: none;
+		text-decoration: none;
+		color: #dddacc;
+		background: rgba(0, 0, 0, 0.5);
+		padding: 3vw;
+		font-size: 2vw;
+		border: 0.2vw solid #dddacc;
+		transition: background 200ms ease-in;
+		border-radius: 1vw;
+		opacity: 0.0;
+		max-width: 90%;
+    }
+}
+
+/* Styles for .credits on 425px displays */
+@media screen and (min-width: 321px) and (max-width: 425px) {
+    .credits {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		text-transform: none;
+		text-decoration: none;
+		color: #dddacc;
+		background: rgba(0, 0, 0, 0.5);
+		padding: 6vw;
+		font-size: 6vw;
+		border: 0.2vw solid #dddacc;
+		transition: background 200ms ease-in;
+		border-radius: 1vw;
+		opacity: 0.0;
+		max-width: 90%;
+	
+    }
+}
+
+/* Styles for .credits on 375px displays */
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    .credits {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		text-transform: none;
+		text-decoration: none;
+		color: #dddacc;
+		background: rgba(0, 0, 0, 0.5);
+		padding: 6vw;
+		font-size: 6vw;
+		border: 0.2vw solid #dddacc;
+		transition: background 200ms ease-in;
+		border-radius: 1vw;
+		opacity: 0.0;
+		max-width: 90%;
+    }
+}
+
+/* Styles for .credits on 320px displays */
+@media screen and (max-width: 320px) {
+    .credits {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		text-transform: none;
+		text-decoration: none;
+		color: #dddacc;
+		background: rgba(0, 0, 0, 0.5);
+		padding: 5vw;
+		font-size: 7vw;
+		border: 0.2vw solid #dddacc;
+		transition: background 200ms ease-in;
+		border-radius: 1vw;
+		opacity: 0.0;
+		max-width: 90%;
+    }
+}

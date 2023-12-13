@@ -1139,27 +1139,27 @@
             </figure>
           </section>
 
+
           <section class="contact-form">
-            <!--  <h3 class="h3 form-title">Contact Form</h3>
+            <h3 class="h3 form-title">Contact Form</h3>
 
-          <form class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" id="fullName" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" id="email_id" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" id="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button onsubmit="sendEmail()" class="form-btn" type="submit">
-              <ion-icon name="paper-plane"></ion-icon>
-              Send Message
-            </button>
-
+            <form class="form" name="contact" action="success.html" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact">
             
-
-          </form> -->
+              <div class="input-wrapper">
+                <input type="text" name="fullname" id="fullName" class="form-input" placeholder="Full name" required>
+            
+                <input type="email" name="email" id="email_id" class="form-input" placeholder="Email address" required>
+              </div>
+            
+              <textarea name="message" id="message" class="form-input" placeholder="Your Message" required></textarea>
+            
+              <button class="form-btn" type="submit">
+                <ion-icon name="paper-plane"></ion-icon>
+                Send Message
+              </button>
+            </form>            
+            
             <div>
               <br />
               <ul class="social-list">
@@ -1200,14 +1200,14 @@
                 </li>
               </ul>
             </div>
-            <a
+            <!-- <a
               href="mailto:nivashnisa@gmail.com"
               class="form-btn"
               style="align-items: center; margin-right: 331px; margin-top: 7px"
             >
               <ion-icon name="paper-plane"></ion-icon>
               Send a mail</a
-            >
+            > -->
           </section>
         </article>
       </div>
