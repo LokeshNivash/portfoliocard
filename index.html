@@ -143,10 +143,16 @@
     <!--
     - #MAIN
   -->
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKS3WKJP"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PKS3WKJP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <main>
       <!--
@@ -832,6 +838,10 @@
               </li>
 
               <li class="filter-item">
+                <button data-filter-btn>Video Editing</button>
+              </li>
+
+              <li class="filter-item">
                 <button data-filter-btn>Animations</button>
               </li>
 
@@ -858,6 +868,10 @@
 
                 <li class="select-item">
                   <button data-select-item>Graphic Design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Video Editing</button>
                 </li>
 
                 <li class="select-item">
@@ -966,6 +980,38 @@
                   <p class="project-category">Graphic Design</p>
                 </a>
               </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="video editing"
+              >
+                <div id="video-container">
+                  <iframe
+                    width="300px"
+                    height="400px"
+                    src="https://www.youtube.com/embed/RqcRiR4noek?si=EX1R3BUztiJ3szZJ&amp;controls=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    style="border: 3px solid #ffda6b; border-radius: 5px"
+                  ></iframe>
+                </div>
+              </li>
+
+              <!-- <div id="video-container">
+                <iframe
+                  width="300px"
+                  height="400px"
+                  src="https://www.youtube.com/embed/RqcRiR4noek?si=EX1R3BUztiJ3szZJ&amp;controls=0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  style="border: 3px solid #ffda6b; border-radius: 5px"
+                ></iframe>
+              </div> -->
 
               <li
                 class="project-item active"
@@ -1091,8 +1137,6 @@
                   <p class="project-category">Animations</p>
                 </a>
               </li>
-
-              
 
               <li
                 class="project-item active"
@@ -1355,6 +1399,10 @@
     <!--
     - ionicon link
   -->
+    <script
+      src="https://kit.fontawesome.com/bfeb3ed549.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
