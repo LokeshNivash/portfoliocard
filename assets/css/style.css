@@ -1771,9 +1771,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
+  .avatar-box { 
+    border: 3px solid #ffdb70ff;
+    border-radius: 20px;
+  }
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img { 
+    width: 120px;
+    border-radius: 20px;
+    border-color: #ffdb70ff;
+  }
 
   .info-content .name { margin-bottom: 15px; }
 
