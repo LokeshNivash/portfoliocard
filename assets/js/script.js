@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function(){
           cl.add(runClass);
           
           // Add the file source location here
-          const fileSrc = 'assets/images/works/Lokesh-resume-VE.pdf';
+          const fileSrc = 'assets/images/works/LokeshR-Resume.pdf';
           
           // Create an anchor element for downloading
           const downloadLink = document.createElement('a');
