@@ -500,6 +500,24 @@ main {
 
 .about-text p { margin-bottom: 15px; }
 
+/* .counters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.counters {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+.counters-button {
+  text-align: center;
+}
+
+.form-btn {
+  display: inline-block;
+  margin: 0 auto;
+}
 
 
 /**

@@ -120,6 +120,32 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 }
 
+// counter js
+const counters = document.querySelectorAll('.counter');
+const speed = 2000; // The lower the slower
+
+counters.forEach(counter => {
+    const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const text = counter.getAttribute('data-text'); // Get the text
+        let count = 0;
+
+        const increment = Math.ceil(target / speed);
+
+        const interval = setInterval(() => {
+            count += increment;
+            if (count >= target) {
+                clearInterval(interval);
+                count = target;
+            }
+            counter.innerText = count+text;
+        }, 200);
+    };
+
+    updateCount();
+});
+
+
 
 // contact form variables
 const form = document.querySelector("[data-form]");
