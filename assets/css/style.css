@@ -1708,6 +1708,27 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
   
 }
+
+@media screen and (max-width: 425px) {
+  .avatar-box {
+    border-width: 2px; /* Adjust border width */
+    border-radius: 15px; /* Adjust border radius */
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .avatar-box {
+    border-width: 1px; /* Further adjust border width */
+    border-radius: 20px; /* Further adjust border radius */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .avatar-box {
+    border-width: 1px; /* Further adjust border width */
+    border-radius: 5px; /* Further adjust border radius */
+  }
+}
 /**
  * responsive larger than 580px screen
  */
@@ -1789,10 +1810,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { 
+  /* .avatar-box { 
     border: 3px solid #ffdb70ff;
     border-radius: 20px;
-  }
+  } */
 
   .avatar-box img { 
     width: 120px;
@@ -2292,9 +2313,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     z-index: 1;
   }
 
+  .loki-img-box {
+    border-radius: 20px;
+  }
+
   .sidebar-info { flex-direction: column; }
 
-  .avatar-box img { width: 150px; }
+  .avatar-box img { width: 150px;}
 
   .info-content .name {
     white-space: nowrap;
