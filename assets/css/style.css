@@ -179,7 +179,15 @@ body { background: var(--smoky-black); }
   z-index: 999;
 }
 
+@media (max-width: 1024px) {
+  #cursor {
+    display: none; /* Hide the inner circle cursor on smaller screens */
+  }
 
+  #cursor-border {
+    display: none; /* Hide the outer circle cursor on smaller screens */
+  }
+}
 
 /*-----------------------------------*\
   #REUSED STYLE
