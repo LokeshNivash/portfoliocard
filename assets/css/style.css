@@ -878,6 +878,9 @@ main {
   height: 100%;
   border-radius: inherit;
 }
+.content-card {
+  margin-bottom: 25px;
+}
 
 
 
@@ -1918,6 +1921,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     line-clamp: 2;
     -webkit-line-clamp: 2;
   }
+
 
   /* testimonials modal */
 
